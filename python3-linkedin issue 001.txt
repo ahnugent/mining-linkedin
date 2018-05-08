@@ -1,0 +1,25 @@
+Control Panel\System and Security\Administrative Tools
+
+
+Server started on port:8080
+127.0.0.1 - - [19/Sep/2017 10:12:19] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\socketserver.py", line 681, in __init__
+    self.handle()
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\http\server.py", line 422, in handle
+    self.handle_one_request()
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\http\server.py", line 410, in handle_one_request
+    method()
+  File "C:/Py_data/LinkedIn/python3-linkedin/examples/http_api.py", line 65, in do_GET
+    open_new_tab(liw.authentication.authorization_url)
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\site-packages\linkedin\linkedin.py", line 112, in authorization_url
+    qsl.append('%s=%s' % (quote(k), quote(v)))
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\urllib\parse.py", line 712, in quote
+    return quote_from_bytes(string, safe)
+  File "C:\Users\allen\Anaconda3\envs\prospecting\lib\urllib\parse.py", line 737, in quote_from_bytes
+    raise TypeError("quote_from_bytes() expected bytes")
+TypeError: quote_from_bytes() expected bytes
